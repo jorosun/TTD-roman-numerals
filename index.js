@@ -1,3 +1,5 @@
 export const numberToRoman = (number) => {
-  return number;
+  if (number === 1) {
+    return "I";
+  }
 };
