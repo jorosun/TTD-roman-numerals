@@ -49,4 +49,8 @@ describe("numberToRoman", () => {
   test("returns CXIX if number is 119", () => {
     expect(numberToRoman(119)).toBe("CXIX");
   });
+
+  test("returns CXLVIII if number is 148", () => {
+    expect(numberToRoman(148)).toBe("CXLVIII");
+  });
 });
