@@ -14,7 +14,7 @@ export const numberToRoman = (num) => {
       roman = tens[numbers[i]];
       i++;
     case 1:
-      roman = roman + ones[numbers[i]];
+      roman += ones[numbers[i]];
       i++;
   }
   return roman;
