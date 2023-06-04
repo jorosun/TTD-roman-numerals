@@ -4,5 +4,7 @@ export const numberToRoman = (number) => {
       return "I";
     case 5:
       return "V";
+    case 10:
+      return "X";
   }
 };
