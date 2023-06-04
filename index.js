@@ -1,24 +1,21 @@
-export const numberToRoman = (number) => {
-  switch (number) {
-    case 1:
-      return "I";
+export const numberToRoman = (num) => {
+  const ones = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"];
+  const tens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
+
+  const length = num.toString().length;
+  const numbers = num.toString().split("").map(Number);
+  let roman = "";
+  console.log(num);
+  console.log(length);
+  console.log(numbers);
+  let i = 0;
+  switch (length) {
     case 2:
-      return "II";
-    case 3:
-      return "III";
-    case 4:
-      return "IV";
-    case 5:
-      return "V";
-    case 6:
-      return "VI";
-    case 7:
-      return "VII";
-    case 8:
-      return "VIII";
-    case 9:
-      return "IX";
-    case 10:
-      return "X";
+      roman = tens[numbers[i]];
+      i++;
+    case 1:
+      roman = roman + ones[numbers[i]];
+      i++;
   }
+  return roman;
 };
