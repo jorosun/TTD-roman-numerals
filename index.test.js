@@ -77,4 +77,8 @@ describe("numberToRoman", () => {
   test("returns MDLXXXIV if number is 1584", () => {
     expect(numberToRoman(1584)).toBe("MDLXXXIV");
   });
+
+  test("returns MMCMXCIX if number is 1584", () => {
+    expect(numberToRoman(2999)).toBe("MMCMXCIX");
+  });
 });
