@@ -73,4 +73,8 @@ describe("numberToRoman", () => {
   test("returns M if number is 1000", () => {
     expect(numberToRoman(1000)).toBe("M");
   });
+
+  test("returns MDLXXXIV if number is 1584", () => {
+    expect(numberToRoman(1584)).toBe("MDLXXXIV");
+  });
 });
