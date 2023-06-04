@@ -25,4 +25,8 @@ describe("numberToRoman", () => {
   test("returns XXI if number is 21", () => {
     expect(numberToRoman(21)).toBe("XXI");
   });
+
+  test("returns LIII if number is 53", () => {
+    expect(numberToRoman(53)).toBe("LIII");
+  });
 });
