@@ -13,4 +13,8 @@ describe("numberToRoman", () => {
   test("returns X if number is 10", () => {
     expect(numberToRoman(10)).toBe("X");
   });
+
+  test("returns II if number is 2", () => {
+    expect(numberToRoman(2)).toBe("II");
+  });
 });
