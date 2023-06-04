@@ -61,4 +61,8 @@ describe("numberToRoman", () => {
   test("returns DXLV if number is 545", () => {
     expect(numberToRoman(545)).toBe("DXLV");
   });
+
+  test("returns CMXCIX if number is 999", () => {
+    expect(numberToRoman(999)).toBe("CMXCIX");
+  });
 });

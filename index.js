@@ -1,7 +1,7 @@
 export const numberToRoman = (num) => {
   const ones = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"];
   const tens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
-  const hundreds = ["", "C", "CC", "CCC", "CD", "D", "DX", "DXX", "DXXX", "XM"];
+  const hundreds = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];
 
   const length = num.toString().length;
   const numbers = num.toString().split("").map(Number);
