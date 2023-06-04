@@ -2,6 +2,7 @@ export const numberToRoman = (num) => {
   const ones = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"];
   const tens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
   const hundreds = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];
+  const thousands = ["", "M", "MM", "MMM"];
 
   const length = num.toString().length;
   const numbers = num.toString().split("").map(Number);
@@ -13,8 +14,11 @@ export const numberToRoman = (num) => {
 
   let i = 0;
   switch (length) {
+    case 4:
+      roman = thousands[numbers[i]];
+      i++;
     case 3:
-      roman = hundreds[numbers[i]];
+      roman += hundreds[numbers[i]];
       i++;
     case 2:
       roman += tens[numbers[i]];

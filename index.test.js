@@ -69,4 +69,8 @@ describe("numberToRoman", () => {
   test("returns DCCCLXXXVIII if number is 888", () => {
     expect(numberToRoman(888)).toBe("DCCCLXXXVIII");
   });
+
+  test("returns M if number is 1000", () => {
+    expect(numberToRoman(1000)).toBe("M");
+  });
 });
