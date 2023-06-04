@@ -57,4 +57,8 @@ describe("numberToRoman", () => {
   test("returns CCLXXXIV if number is 284", () => {
     expect(numberToRoman(284)).toBe("CCLXXXIV");
   });
+
+  test("returns DXLV if number is 545", () => {
+    expect(numberToRoman(545)).toBe("DXLV");
+  });
 });
