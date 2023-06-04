@@ -29,4 +29,12 @@ describe("numberToRoman", () => {
   test("returns LIII if number is 53", () => {
     expect(numberToRoman(53)).toBe("LIII");
   });
+
+  test("returns XLVI if number is 46", () => {
+    expect(numberToRoman(46)).toBe("XLVI");
+  });
+
+  test("returns LXXXIV if number is 84", () => {
+    expect(numberToRoman(84)).toBe("LXXXIV");
+  });
 });
