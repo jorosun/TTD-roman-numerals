@@ -65,4 +65,8 @@ describe("numberToRoman", () => {
   test("returns CMXCIX if number is 999", () => {
     expect(numberToRoman(999)).toBe("CMXCIX");
   });
+
+  test("returns DCCCLXXXVIII if number is 888", () => {
+    expect(numberToRoman(888)).toBe("DCCCLXXXVIII");
+  });
 });
