@@ -85,4 +85,18 @@ describe("numberToRoman", () => {
   test("returns MMM if number is 3000", () => {
     expect(numberToRoman(3000)).toBe("MMM");
   });
+
+  /*
+  test("returns error message if number is greater than 3000", () => {
+    expect(numberToRoman(3001)).toBe("Roman Numerals only go up to 3000");
+  });
+  */
+
+  /*
+  test("returns error if no number", () => {
+    expect(numberToRoman()).toBe(
+      "You haven't passed a number to function numberToRoman"
+    );
+  });
+  */
 });
